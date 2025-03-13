@@ -1,0 +1,103 @@
+My current goal is for the robot to do a variety of dynamic movements like car_move_demo, 
+car_turn_demo, while incorporating object avoidance.  I would also like for the robot arm 
+to move during forward movement with any of the files ArmMoveIK.py,  control_by_servo, 
+control_by_kinematics. eventually being able to pick up small block and move it out of the 
+way so that it can continue forward in motion. 
+
+
+
+Key Features
+Dynamic Movements:
+
+Use movement patterns from Car_Move_Demo.py, Car_Turn_Demo.py, etc., for 
+versatile maneuvers like forward movement, turning, slanting, and drifting.
+Obstacle Avoidance:
+
+Incorporate sonar-based object detection.
+Halt or reroute the robot when an obstacle is detected.
+Arm Movement:
+
+Use ArmMoveIK.py, control_by_servo.py, and control_by_kinematics.py to control the robot arm.
+Implement an action where the arm picks up small blocks and moves them out of the robot's path.
+Integrated Workflow:
+
+Combine the movement and arm operations into a seamless autonomous loop.
+Implementation Plan
+
+Modules
+SensorModule:
+Handles sonar and vision-based detection for object avoidance.
+
+MotionController:
+Executes dynamic movement patterns using mecanum wheel commands.
+
+ArmController:
+Controls the robotic arm for picking up and moving objects.
+
+MainController:
+Combines all modules and defines the robot’s behavior.
+
+
+How It Works
+Dynamic Movements:
+The robot performs advanced maneuvers like slanting, turning, and moving forward.
+
+Obstacle Avoidance:
+Sonar detects obstacles. If one is too close, the robot halts and activates the arm.
+
+Arm Operations:
+The arm moves into position, picks up a block, and moves it out of the way.
+The arm resets to its default position before resuming motion.
+
+Modularity:
+Each component (motion, sensors, arm) is handled by a dedicated class for maintainability 
+and flexibility.
+
+
+
+
+
+Next Steps
+Test: Run the script with your robot and adjust parameters (e.g., arm positions, thresholds).
+Enhance Vision Processing: Integrate ColorTracking.py for block detection to guide the 
+arm's operations.
+Fine-Tune Movements: Use PID control (PID.py) for smoother motion and precision.
+
+11-18-24
+ModuleNotFoundError:No module named 'HiwonderSDK', 'Sonar', 'PID'
+
+ImportError: cannot import name 'ArmIK' from 'ArmIK' (unknown location)
+
+ModuleNotFoundError:No module named 'ArmIk'
+
+
+11-19-24
+
+Error found k needed to be capitalized. 
+Dynamic movement is occuring but sensor is not being read.
+ possible battery needs to be rechared. will charge battery before trying again
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
