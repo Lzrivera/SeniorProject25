@@ -1,0 +1,15 @@
+current workspace from Dec.2024 til May 2025
+restart point for new scripts. Source code for scripts; AvoidanceOG, Board, Camera, Car_Forward_Demo, Sonar, mecanum.
+
+don't work folder- has scripts that have been tested on robot and had multiple errors, 
+some have been worked through, other have not.
+
+keep for backtracking folder- has scripts that have been tested a certain points, and are known to work well.
+  Success.py being the most recent working file
+
+
+Luz- most recent file is AdvRoboticshw.py script. currently working through errors and troubleshooting 
+camera connections in this code.
+
+
+
